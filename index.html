@@ -20,8 +20,10 @@ background-color: hsla(165,81%,93%,0.5);
     <meta charset="UTF-8"/>
     <title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!--Faz o link com as configurações do ESTILO.CSS-->
-
+    
 </head>
+<script language="javascript" src="_javascript/funcoes.js"> /* SCRIPT PARA CÓDIGOS JAVASCRIPT!, se quiser em outras linguagens, acrescenta-se language=<linguagem> */
+</script>
 
 <body>
     <div id="interface"> <!--faz divisão-->
@@ -37,11 +39,11 @@ background-color: hsla(165,81%,93%,0.5);
     <h1>Menu Principal</h1>
 <!-- Ordered Lists (ol); Unordered Lists (ul); List items (il)-->
 <ul type="disc">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="specs.html">Especificações</a></li>
-    <li><a href="fotos.html">Fotos</a></li>
-    <li><a href="multimidia.html">Multimídia</a></li>
-    <li><a href="fale-conosco.html">Fale conosco</a></li>
+    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
 </ul>
 </nav>
         </header>
@@ -53,10 +55,10 @@ background-color: hsla(165,81%,93%,0.5);
 <hgroup>
 <br/> <!--Break Row (quebra linha)-->
 &nbsp; <!--Espaço em branco-->
-<h3>Tecnologia > &nbsp; Inovações</h3> <!-- Bread Crumbs do site (caminho para navegar pelo site)-->
+<h3>Tecnologia > &nbsp; Inovações</h3> <!-- Breadcrumbs do site (caminho para navegar pelo site)-->
 <h1>Saiba tudo sobre o Google Glass</h1>
 <h2>por Johnattan LS, guiado por Gustavo Guanabara</h2>
-<h3 class="direita">Atualizado em 23/Abril/2020</h3>
+<h3 class="direita">Atualizado em 23/Abril/2013</h3>
 </hgroup>
 </header>
 
@@ -153,10 +155,16 @@ int main(){
 <h2>Como funciona</h2>
 <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
 
-<h2>O que você pode fazer com o Google Glasses</h2>
+<h2>O que você pode fazer com o Google Glass</h2>
 <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/><!--permite quebra de palavra em sua separação silábica-->humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
 
-[AQUI ENTRA UM VÍDEO]
+<div id="tv-radio">
+    <video id="filme1" controls="controls" poster="_imagens/video-mini02.jpg">
+        <source src="_media/how-it-feels.mp4" type="video/mp4"/>
+        Desculpe, mas não foi possível carregar o vídeo.
+    </video>
+</div>
+
 </article>
 
 </section>
@@ -164,7 +172,12 @@ int main(){
 <h1>Outras Notícias</h1>
 <h2>Vídeo mais recente</h2>
 
-[AQUI ENTRA UM VÍDEO]
+<div id="tv-radio">
+    <video id="filme2" controls="controls" poster="_imagens/video-mini01.jpg">
+        <source src="_media/one-day.mp4" type="video/mp4"/>
+        Desculpe, mas não foi possível carregar o vídeo.
+    </video>
+</div>
 
 <h2>Novidades no Glass</h2>
 <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
@@ -175,7 +188,7 @@ int main(){
 
 <footer id="rodape">
 
-<p>Copyright &copy; 2013 - by Gustavo Guanabara <br/>
+<p>Copyright &copy; 2013 - by Johnattan LS, guiado por Gustavo Guanabara <br/>
 <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
 
 </footer>

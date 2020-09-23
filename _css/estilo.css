@@ -36,15 +36,16 @@ a:hover{
 
 
 header#cabecalho img#icone{
-    position: absolute;
-    left: 790px;
-    top: 40px;
+    position: relative;
+    left: 730px;
+    top: -50px;
 
 }
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 150px;
+    margin-top:50px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
@@ -109,8 +110,10 @@ nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute; /* Como não ta "relativo", o menu pode ser posicionado em qualquer lugar da página, e não apenas da "caixa" do menu */
+    object-position: center; /*add por mim*/
     top: -20px;
-    left: 300px;
+    /*left: 300px;*/
+    
 }
 
 nav#menu li {
@@ -135,7 +138,7 @@ nav#menu a{
     }
 
 nav#menu a:hover{
-    color: #ffffff;
+    color:#ffffff;
 }
 
 /*CONFIGURAÇÃO DA SECTION "CORPO*/
@@ -246,6 +249,17 @@ aside#lateral h2{
 footer#rodape{
     clear: both;
     border-top: 1px solid #606060;
+}
+
+video#filme1{
+    position: relative;;
+    width: 500px;
+    
+}
+
+video#filme2{
+    position:relative;
+    max-width:100%;
 }
 
 footer#rodape p{
